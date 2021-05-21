@@ -1,0 +1,459 @@
+---
+title: API Documentation
+
+language_tabs: # must be one of https://git.io/vQNgJ
+  - shell
+  - python
+  - php
+  - javascript
+
+
+toc_footers:
+  - <a href="mailto:contact@inokufu.com?subject=Inokufu API Key request&body=Hi,%0D%0A %0D%0A I found your awesome Inokufu API Cloud and I would be very intersted to get a Key!%0D%0A %0D%0A My name is .... and I'd like to get a free API key for testing purpose / paid API key for integrating it in my app/project. %0D%0A %0D%0A Regards, %0D%0A ...">Ask a Developer Key 🔑 here</a>
+  - <a href="http://www.inokufu.com/">Made with ❤️ by Inokufu</a>
+
+includes:
+  - errors
+
+search: true
+---
+
+# Introduction
+
+Welcome to the Inokufu API Cloud 🎉
+
+This API documentation shows you how to access our API endpoints, which can get information about Learning Objects in our index. This index has currently more than 2M learning objects from various sources such as YouTube, Coursera, edX, Apple podcasts, Google Play store, etc.
+
+You can view shell, python, php and JavaScript code examples in the dark areas.
+
+# Authentication
+
+Inokufu API Cloud uses API keys to allow access to our API. You can register for a Developer API key by sending us an email at <contact@inokufu.com>.
+Inokufu API Cloud expects for the API key to be included in API requests to the server in a header that looks like the following:
+
+`x-api-key: SAY-FRIEND-AND-ENTER`
+
+### Code exemples
+
+#### Shell
+
+```shell
+# With shell, you can just pass the correct header with each request
+curl "api_endpoint_here"
+  -H "x-api-key: SAY-FRIEND-AND-ENTER"
+```
+
+#### Python
+
+```py
+import requests
+url = 'api_endpoint_here'
+headers = {'x-api-key': 'SAY-FRIEND-AND-ENTER'}
+r = requests.get(url, headers=headers)
+r.json()
+```
+
+#### PHP
+
+```php
+$key = 'SAY-FRIEND-AND-ENTER';
+$curl = curl_init('api_endpoint_here');
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+curl_setopt($curl, CURLOPT_HTTPHEADER, array('x-api-key:'.$key));
+$data = curl_exec($curl);
+if($data===false){
+    var_dump(curl_error($curl));
+};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const search = async () => {fetch('api_endpoint_here', {headers: {"x-api-key": apiKeySecured}} ).then(function(response) {
+  if(response.ok) {
+      response.json().then(function(json) { 
+        const resJson = JSON.stringify(json)
+        //console.log(resJson);
+        return resJson;
+})}})};
+```
+
+> Make sure to replace `SAY-FRIEND-AND-ENTER` with your own Developer API key.
+
+ℹ️ For Demo purpose, you can use this API key : <code>demo29331806e87fe8d34d03ddaad2b1b454b58a5b9d4f1385d4f86bb321</code> but beware both request speed and number of daily calls are limited with this key. 
+
+## Usage plans
+
+Free Developer API keys are available on request at <contact@inokufu.com>
+
+For higher monthly request quota and request speed, we offer paid usage plan starting at $99/month. Feel free to get in touch at <contact@inokufu.com>. We are fully dedicated to the success of our customers and partners. Together we can make education better. 😊
+
+Several usage plans are available depending on your needs.
+
+Usage plan | Free | Lite | Pro | Custom
+--- | :-:  | :-: | :-: | :-:
+Request speed |  10 call/s | 100 call/s | 500 call/s | >> 500 call/s
+Monthly limit | 500 calls | 10k calls | 100k calls | >> 100k calls
+Search by keywords | ✔️ | ✔️ |  ✔️ | ✔️
+Search by ROME | - | ✔️ |  ✔️ | ✔️
+Search by Formacode® | - | ✔️ |  ✔️ | ✔️
+Support | - | email |  email (48h) | email + phone (24h/7)
+Monthly pricing | 0 | $99 | $499 | On quote 
+
+<aside class="warning">
+Replace <code>SAY-FRIEND-AND-ENTER</code> with your own Developer API key to make more requests.
+</aside>
+
+
+# Utility
+
+## Provider
+
+
+
+### HTTP Request
+
+`GET https://api.inokufu.com/learningobject/v2/provider`
+
+### Query Parameters
+
+This endpoint does not require any query parameter.
+
+### Code exemples
+
+#### Shell
+
+```shell
+curl "https://api.inokufu.com/learningobject/v2/provider"
+```
+
+#### Python
+
+```python
+import requests
+r = requests.get('https://api.inokufu.com/learningobject/v2/provider')
+r.json()
+```
+
+#### PHP
+
+```php
+$curl = curl_init('https://api.inokufu.com/learningobject/v2/provider');
+//Download the certificate from 'https://api.inokufu.com/learningobject/v2' to avoid SSL errors and replace 'certInokufu.cer' with the name of your downloaded file
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+$data = curl_exec($curl);
+if($data===false){
+   var_dump(curl_error($curl));
+};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const type = async () => {fetch('https://api.inokufu.com/learningobject/v2/provider' ).then(function(response) {
+  if(response.ok) {
+    response.json().then(function(json) { 
+      const resJson = JSON.stringify(json)
+      //console.log(resJson);
+      return resJson;
+})}})};
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{}
+```
+
+## Type
+
+This endpoint retrieves a list of the types of LO currently supported.
+
+Type | Example of providers
+--------- | -------
+`video` | YouTube, Dailymotion, Vimeo
+`mooc` | edX, Coursera, OpenClassrooms, Linkedin Learning
+`podcast` | ApplePodcasts, SoundCloud
+`app` | App Store, Google Play Store
+
+
+### HTTP Request
+
+`GET https://api.inokufu.com/learningobject/v2/type`
+
+### Query Parameters
+
+This endpoint does not require any query parameter.
+
+<aside class="success"> More types such as books, trainings, distance learnings and articles will be added in the upcoming weeks. </aside>
+
+### Code exemples
+
+#### Shell
+
+```shell
+curl "https://api.inokufu.com/learningobject/v2/type"
+```
+
+#### Python
+
+```python
+import requests
+r = requests.get('https://api.inokufu.com/learningobject/v2/type')
+r.json()
+```
+
+#### PHP
+
+```php
+$curl = curl_init('https://api.inokufu.com/learningobject/v2/type');
+//Download the certificate from 'https://api.inokufu.com/learningobject/v2' to avoid SSL errors and replace 'certInokufu.cer' with the name of your downloaded file
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+$data = curl_exec($curl);
+if($data===false){
+   var_dump(curl_error($curl));
+};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const type = async () => {fetch('https://api.inokufu.com/learningobject/v2/type' ).then(function(response) {
+  if(response.ok) {
+    response.json().then(function(json) { 
+      const resJson = JSON.stringify(json)
+      //console.log(resJson);
+      return resJson;
+})}})};
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[{"type": "video", "description": "Educational videos from providers such as YouTube, Dailymotion, Vimeo, etc."}, {"type": "mooc", "description": "Massive Open Online Course (MOOC) from providers such as edX, Coursera, OpenClassrooms, Linkedin Learning, etc."}, {"type": "podcast", "description": "Educational audio file from providers such as ApplePodcasts, SoundCloud."}, {"type": "app", "description": "Educational app or app that are useful for learning a new skill of job, from providers such as App Store, Google Play Store."}]
+```
+
+## Lang
+
+
+
+### HTTP Request
+
+`GET https://api.inokufu.com/learningobject/v2/lang`
+
+### Query Parameters
+
+This endpoint does not require any query parameter.
+
+### Code exemples
+
+#### Shell
+
+```shell
+curl "https://api.inokufu.com/learningobject/v2/lang"
+```
+
+#### Python
+
+```python
+import requests
+r = requests.get('https://api.inokufu.com/learningobject/v2/lang')
+r.json()
+```
+
+#### PHP
+
+```php
+$curl = curl_init('https://api.inokufu.com/learningobject/v2/lang');
+//Download the certificate from 'https://api.inokufu.com/learningobject/v2' to avoid SSL errors and replace 'certInokufu.cer' with the name of your downloaded file
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+$data = curl_exec($curl);
+if($data===false){
+   var_dump(curl_error($curl));
+};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const type = async () => {fetch('https://api.inokufu.com/learningobject/v2/lang' ).then(function(response) {
+  if(response.ok) {
+    response.json().then(function(json) { 
+      const resJson = JSON.stringify(json)
+      //console.log(resJson);
+      return resJson;
+})}})};
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{}
+```
+
+## Bloom
+
+
+
+### HTTP Request
+
+`GET https://api.inokufu.com/learningobject/v2/bloom`
+
+### Query Parameters
+
+This endpoint does not require any query parameter.
+
+### Code exemples
+
+#### Shell
+
+```shell
+curl "https://api.inokufu.com/learningobject/v2/bloom"
+```
+
+#### Python
+
+```python
+import requests
+r = requests.get('https://api.inokufu.com/learningobject/v2/bloom')
+r.json()
+```
+
+#### PHP
+
+```php
+$curl = curl_init('https://api.inokufu.com/learningobject/v2/bloom');
+//Download the certificate from 'https://api.inokufu.com/learningobject/v2' to avoid SSL errors and replace 'certInokufu.cer' with the name of your downloaded file
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+$data = curl_exec($curl);
+if($data===false){
+   var_dump(curl_error($curl));
+};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const type = async () => {fetch('https://api.inokufu.com/learningobject/v2/bloom' ).then(function(response) {
+  if(response.ok) {
+    response.json().then(function(json) { 
+      const resJson = JSON.stringify(json)
+      //console.log(resJson);
+      return resJson;
+})}})};
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{}
+```
+
+# Learning Objects (LO)
+
+## Search
+
+
+
+### HTTP Request
+
+`GET https://api.inokufu.com/learningobject/v2/search`
+
+### Query Parameters
+
+Query parameters must be included in URL.
+
+Parameter | Default | Required | Description
+--------- | :-: | :-: | -----------
+`learningTimeMax` |  | No | 
+`provider` |  | No | 
+`lang` |  | Yes | 
+`ageMax` |  | No | 
+`keywords` |  | No | 
+`model` |  | Yes | 
+`levelMin` |  | No | 
+`sort` |  | No | 
+`noteMin` |  | No | 
+`type` |  | Yes | 
+`ageMin` |  | No | 
+`page` |  | No | 
+`bloom` |  | Yes | 
+`levelMax` |  | No | 
+`max` |  | Yes | 
+`learningTimeMin` |  | No | 
+
+
+API key must be included in a header that looks like the following:
+
+`x-api-key: SAY-FRIEND-AND-ENTER`
+
+### Response Parameters
+
+Parameter |  Description
+--------- | -----------
+`title` | Title of the LO.
+`url` | Link to the LO webpage.
+
+
+### Code exemples
+
+#### Shell
+
+```shell
+curl ""
+  -H "x-api-key: SAY-FRIEND-AND-ENTER"
+```
+
+#### Python
+
+```python
+import requests
+url = ''
+headers = {'x-api-key': 'x-api-key: SAY-FRIEND-AND-ENTER'}
+r = requests.get(url, headers=headers)
+r.json()
+```
+
+#### PHP
+
+```php
+$key = 'SAY-FRIEND-AND-ENTER';
+$curl = curl_init('');
+//Download the certificate from 'https://api.inokufu.com/v1' to avoid SSL errors and replace 'certInokufu.cer' with the name of your downloaded file
+curl_setopt($curl,CURLOPT_CAINFO,__DIR__ . DIRECTORY_SEPARATOR . 'certInokufu.cer');
+curl_setopt($curl, CURLOPT_HTTPHEADER, array('x-api-key:'.$key));
+$data = curl_exec($curl);
+if($data===false){
+  var_dump(curl_error($curl));};
+```
+
+#### Javascript
+
+```javascript
+apiKeySecured = 'SAY-FRIEND-AND-ENTER';
+const search = async () => {fetch('', {headers: {'x-api-key': apiKeySecured}} ).then(function(response) {
+  if(response.ok) {
+    response.json().then(function(json) { 
+      const resJson = JSON.stringify(json)
+      //console.log(resJson);
+      return resJson;
+})}})};```
+
+> The above command returns JSON structured like this:
+
+```json
+{}
+```
+
+# Credits
+
+This API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to check their awesome [repo](https://github.com/slatedocs/slate) on Github! 
+
+ROME code is a job thesaurus developped by [Pôle Emploi](https://www.pole-emploi.fr/accueil). Check out their [website](https://www.pole-emploi.fr/employeur/vos-recrutements/le-rome-et-les-fiches-metiers.html) for more information about this thesaurus.
+
+Formacode® is a domain of formation thesaurus developed by [Centre Inffo](https://formacode.centre-inffo.fr). Formacode® is a registered trade mark owned by Centre Inffo. Check out their [website](https://formacode.centre-inffo.fr) for more information about this thesaurus.
