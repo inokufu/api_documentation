@@ -11,7 +11,7 @@
 
 * [DomComp v1](domcomp-api/v1.md)
 
-## 🤓 Resources
+## Resources
 
 * [FAQ](resources/faq.md)
 * [Website](https://www.inokufu.com)
