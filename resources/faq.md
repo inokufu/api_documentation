@@ -4,6 +4,10 @@ description: Frequently asked questions
 
 # FAQ
 
+## 👋 Who is behind Inokufu? <a id="who-is-behind-gitbook"></a>
+
+We are a small french team based in a beautiful city called Lyon, just hours from the French Alps! You can read more about us on our [About page.](https://www.inokufu.com/about/) 🤗
+
 ## **Can I use Inokufu APIs for free?**
 
 Absolutely, we offer forever free [API basic](https://rapidapi.com/search/inokufu) plans you can use. It's the best way for starting using the service. The free plan runs under some limitations to avoid abusing our APIs, like burst rate, limited concurrency rate and monthly rate limit. Basic plan could is the perfect start for side projects or use cases with low API quota requirements.

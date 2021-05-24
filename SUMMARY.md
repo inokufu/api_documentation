@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Getting Started 🎉](README.md)
+* [🎉 Getting Started](README.md)
 
 ## Learning object API
 
@@ -11,13 +11,10 @@
 
 * [DomComp v1](domcomp-api/v1.md)
 
----
+## 🤓 Resources
 
-* [FAQ](faq.md)
-* [Credits](credits.md)
-
-## Links
-
+* [FAQ](resources/faq.md)
 * [Website](https://www.inokufu.com)
-* [Rapid API](https://www.inokufu.com)
+* [Rapid API](https://rapidapi.com/search/inokufu)
+* [Credits](resources/credits.md)
 
