@@ -16,3 +16,8 @@
 * [FAQ](faq.md)
 * [Credits](credits.md)
 
+## Links
+
+* [Website](https://www.inokufu.com)
+* [Rapid API](https://www.inokufu.com)
+
