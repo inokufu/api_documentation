@@ -69,19 +69,11 @@ Pagination lets you list many objects from an API by using more than one request
 
 In the Inokufu API endpoints that support pagination, the optional `max` parameter specifies the maximum number of objects to return. The API will try to return the requested number of objects.
 
-## Note on Timeout
+## Timeout
 
 You may experience timeout during the first calls to our endpoints after a long period of inactivity when using demo or free keys. Don't worry, wait a few minutes and make your call again, everything should work as usual. There is no cold start issue when using a paid key.
 
 ## Questions? Need Help? Found a bug?
 
 If you've got questions about our API, found a bug or just want to chat with our developers, please feel free to send us an email to [support@inokufu.com](mailto:support@inokufu.com)!
-
-## Credits <a id="credits"></a>
-
- ESCO is the multilingual classification of European Skills, Competences, Qualifications and Occupations developed by the European Commission. Check out their [website](https://ec.europa.eu/esco/portal/home) for more information.
-
-ROME code is a job thesaurus developed by [Pôle Emploi](https://www.pole-emploi.fr/accueil). Check out their [website](https://www.pole-emploi.fr/employeur/vos-recrutements/le-rome-et-les-fiches-metiers.html) for more information.
-
-Formacode® is a domain of formation thesaurus developed by [Centre Inffo](https://formacode.centre-inffo.fr/). Formacode® is a registered trade mark owned by Centre Inffo. Check out their [website](https://formacode.centre-inffo.fr/) for more information.
 

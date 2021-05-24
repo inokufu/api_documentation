@@ -11,3 +11,8 @@
 
 * [DomComp v1](domcomp-api/v1.md)
 
+---
+
+* [FAQ](faq.md)
+* [Credits](credits.md)
+
