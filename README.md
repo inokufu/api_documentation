@@ -10,9 +10,9 @@ The **Inokufu web services APIs** allow you to programmatically access Inokufu d
 
 Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomComp**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
-The **Learning Object API** gives you search and access to our ever increasing index of 2.5M+ learning objects from  YouTube, Coursera, edX, Apple podcasts, Google Play store, Apple Books, Amazon Books, Instructables, Medium, etc. 
+The **Learning Object API** gives you access to our ever increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play store, Apple Books, Amazon Books, Instructables, Medium, etc. 
 
-The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skill related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc 
+The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skill related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
 
 ## Reading this documentation
 
