@@ -1,14 +1,12 @@
 ---
-description: Explore our guides and examples to integrate Inokufu APIs.
+description: Explore our guides and examples to integrate the Inokufu web services APIs.
 ---
 
-# Welcome 🎉
+# Overview
 
+The **Inokufu web services APIs** allow you to programmatically access Inokufu data and tools. You can use these APIs to retrieve information about learning objects, search for learning objects meeting specific criteria, and more.
 
-
-Building the biggest database of Learning Objects. 
-
-The API documentation page can be accessed [here](https://inokufu.github.io/api/#introduction)
+Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomComp**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
 ## Features
 

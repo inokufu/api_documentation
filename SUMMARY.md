@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome 🎉](README.md)
+* [Overview](README.md)
 
 ## Learning object API
 
