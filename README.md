@@ -2,60 +2,86 @@
 description: Explore our guides and examples to integrate the Inokufu web services APIs.
 ---
 
-# Overview
+# Getting Started 🎉
 
-The **Inokufu web services APIs** allow you to programmatically access Inokufu data and tools. You can use these APIs to retrieve information about learning objects, search for learning objects meeting specific criteria, and more.
+## Welcome to the **Inokufu web services APIs**
+
+The **Inokufu web services APIs** allow you to programmatically access Inokufu data and tools. You can use these APIs to retrieve information about learning objects, search for learning objects meeting specific criteria, explore Domains of Competency \(DomComp\) and more.
 
 Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomComp**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
-## Features
+The **Learning Object API** gives you search and access to our ever increasing index of 2.5M+ learning objects from  YouTube, Coursera, edX, Apple podcasts, Google Play store, Apple Books, Amazon Books, Instructables, Medium, etc. 
 
-* **Only the best** — Our indexing & data wrangling technology GNO6 uses the latest advances in NLP and Machine Learning to sort and highlight the best educational content on any topic.
-* **Multi supports** — Our objective is to index and anaylyse any learning objects available out there. Currently, our API give you access to video, moocs, podcasts and apps. Additional types of support are in preparation: books, ebooks, trainings, degrees, distance learning, articles, courses, etc
-* **Fast** — Our API were developed with speed in mind. Our cloud infrastructure was set up to handle calls at high speed \(inferior to a few hundred ms\) even when a call involves sorting through millions of Learning Objects.
-* **Scalable** — Wether your are working on a side project, a startup product or integrating our endpoints in a LMS used by major Universities, we have the infrastructure to handle your workload. We are an AWS Technlogy partner and our API is built according to the best practices and tools in the field.
+The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skill related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc 
 
-Getting started with Inokufu API Cloud is super easy! Simply call any of our endpoint with the demo key provided in the doc or send us an email to request your own free developer API key [here](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I'd%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
+## Reading this documentation
 
-## Getting Started with our APIs
+Each API endpoint in this documentation is described using several parts:
 
-### Check the documentation
+* **The HTTP method.** Includes `GET`, `POST`, `PUT`, `PATCH`, `DELETE`.
+* **The base path.** URLs referenced in the documentation have a base path such as`https://api.inokufu.com/learningobject/v2` . This base path goes _before_ the endpoint path. Note that if you use [RapidAPI](https://rapidapi.com/organization/inokufu-search) to connect to our APIs, you should use the base URL provided by RapidAPI, such as `https://learning-objects-v2.p.rapidapi.com`
+* **The endpoint path.** This path goes after the base path and enable you to access the specific endpoint you need. For example, to access the Search endpoint of the Learning object API v2, you must add `/search` to the base path:`https://api.inokufu.com/learningobject/v2/search`
+* **Required parameters.** These parameters must be included in a request. Query parameters are added to the end of the URL with [query string encoding](https://en.wikipedia.org/wiki/Query_string). In the example above, `lang=en` and `type=video` are required parameters. 
+* **Optional parameters.** These parameters can be included in a request to customize the query. 
+* **Authentication.** If an API endpoint requires authentication, the API key must be included in the request header.
+* **Code examples.** Each endpoint has example requests in cURL, python, php and javascript format.
 
-We recommend you to take a deep look at our API documentation page, which can can be accessed [here](https://inokufu.github.io/api/#introduction)
+## API versioning
 
-### Utility
+Each Inokufu API has a version string that is specified in the base URL. The version string for a given Inokufu API can be incremented independently from other Inokufu APIs. We encourage you to use the newest available version of the Inokufu APIs.
 
-We have a few utility endpoints to help you set up your call parameters on other endpoints:
+#### Backwards compatible changes <a id="backwards-compatible-changes"></a>
 
-* Type: This endpoint retrieves a list of the types of LO currently supported.
-* Bloom: This endpoint retrieves a list of the levels of learning objectives associated to a LO and currently supported. These levels are adapted from those of [Bloom's taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy):
-  * `Discover` is used as a synonym of knowledge, 
-  * `Understand` for comprehension,
-  * `Do` for application
-  * `Curriculum` was added as a compound level for LO that include the three other levels \(`Discover`, `Understand`, `Do`\) in a coherent way \(e.g. University degree\).  
-* Lang: This endpoint retrieves a list of the languages currently supported \(i.e. english and french\) 
+The following changes to a Inokufu API are considered _backwards compatible_. The version string of an API will not be incremented if we:
 
-### Learning Objects
+* Add properties to JSON objects.
+* Change the number of items returned in a single listing request.
+* Change rate limiting thresholds.
+* Change the structure or length of identifiers generated by the API.
+* Change error messages.
 
-These endpoints enable you to search Learning Objects in our index in different ways:
+#### Backwards incompatible changes <a id="backwards-incompatible-changes"></a>
 
-* by keywords
-* by ROME code
-* by Formacode
+The following changes are considered _backwards incompatible_. The version string of an API will be incremented if we:
 
-### Note on Timeout
+* Remove properties from JSON objects.
+* Change an API's URL structure.
+
+If we deprecate an API or API endpoint that you are using, we will email you to give you at least 90 days' notice.
+
+## Rate limits
+
+Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a `HTTP 429 Too Many Requests` response from the API. 
+
+If you need a rate limit that is higher than the default, please consider upgrading to a higher paid plan or contacting the [Inokufu sales team](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I%27d%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
+
+## URL length limits
+
+The maximum URL length that our APIs accept before returning a HTTP `414 URI too long` response status code is an 8,192 byte limit. Note that some APIs accept `POST` requests with the query parameters in the request body as a workaround for this limitation. The documentation for each endpoint indicates which HTTP request methods it accepts.
+
+## HTTPS and CORS
+
+We recommend that all access to Inokufu APIs is over HTTPS. Requests initiated over HTTP are automatically upgraded to HTTPS.
+
+## Pagination
+
+Pagination lets you list many objects from an API by using more than one request. 
+
+In the Inokufu API endpoints that support pagination, the optional `max` parameter specifies the maximum number of objects to return. The API will try to return the requested number of objects.
+
+## Note on Timeout
 
 You may experience timeout during the first calls to our endpoints after a long period of inactivity when using demo or free keys. Don't worry, wait a few minutes and make your call again, everything should work as usual. There is no cold start issue when using a paid key.
 
 ## Questions? Need Help? Found a bug?
 
-If you've got questions about our API, found a bug or just want to chat with the developers, please feel free to send us an email to [support@inokufu.com](mailto:support@inokufu.com)!
+If you've got questions about our API, found a bug or just want to chat with our developers, please feel free to send us an email to [support@inokufu.com](mailto:support@inokufu.com)!
 
-## Credits
+## Credits <a id="credits"></a>
 
-This API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to check their awesome [repo](https://github.com/slatedocs/slate) on Github!
+ ESCO is the multilingual classification of European Skills, Competences, Qualifications and Occupations developed by the European Commission. Check out their [website](https://ec.europa.eu/esco/portal/home) for more information.
 
-ROME code is a job thesaurus developped by [Pôle Emploi](https://www.pole-emploi.fr/accueil). Check out their [website](https://www.pole-emploi.fr/employeur/vos-recrutements/le-rome-et-les-fiches-metiers.html) for more information about this thesaurus.
+ROME code is a job thesaurus developed by [Pôle Emploi](https://www.pole-emploi.fr/accueil). Check out their [website](https://www.pole-emploi.fr/employeur/vos-recrutements/le-rome-et-les-fiches-metiers.html) for more information.
 
-Formacode® is a domain of formation thesaurus developed by [Centre Inffo](https://formacode.centre-inffo.fr). Formacode® is a registered trade mark owned by Centre Inffo. Check out their [website](https://formacode.centre-inffo.fr) for more information about this thesaurus.
+Formacode® is a domain of formation thesaurus developed by [Centre Inffo](https://formacode.centre-inffo.fr/). Formacode® is a registered trade mark owned by Centre Inffo. Check out their [website](https://formacode.centre-inffo.fr/) for more information.
 
