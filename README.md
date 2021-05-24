@@ -59,7 +59,7 @@ If you need a rate limit that is higher than the default, please consider upgrad
 
 The maximum URL length that our APIs accept before returning a HTTP `414 URI too long` response status code is an 8,192 byte limit. Note that some APIs accept `POST` requests with the query parameters in the request body as a workaround for this limitation. The documentation for each endpoint indicates which HTTP request methods it accepts.
 
-## HTTPS and CORS
+## HTTPS
 
 We recommend that all access to Inokufu APIs is over HTTPS. Requests initiated over HTTP are automatically upgraded to HTTPS.
 
