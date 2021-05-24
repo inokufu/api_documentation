@@ -2,7 +2,7 @@
 description: Explore our guides and examples to integrate the Inokufu web services APIs.
 ---
 
-# 🎉 Getting Started
+# Getting Started 🎉
 
 ## Welcome to the **Inokufu web services APIs**
 
