@@ -53,7 +53,7 @@ If we deprecate an API or API endpoint that you are using, we will email you to 
 
 Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a `HTTP 429 Too Many Requests` response from the API. 
 
-If you need a rate limit that is higher than the default, please consider upgrading to a higher paid plan or contacting the [Inokufu sales team](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I%27d%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
+If you need a rate limit that is higher than the default, please consider upgrading to a higher paid plan or contacting our [Inokufu sales team](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I%27d%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
 
 ## URL length limits
 
