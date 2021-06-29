@@ -10,9 +10,9 @@ The **Inokufu web services APIs** allow you to programmatically access Inokufu d
 
 Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomComp**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
-The **Learning Object API** gives you access to our ever increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play store, Apple Books, Amazon Books, Instructables, Medium, etc. 
+The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc. 
 
-The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skill related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
+The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skilsl related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
 
 ## Reading this documentation
 
@@ -51,7 +51,7 @@ If we deprecate an API or API endpoint that you are using, we will email you to 
 
 ## Rate limits
 
-Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled and you will receive a `HTTP 429 Too Many Requests` response from the API. 
+Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled, and you will receive a `HTTP 429 Too Many Requests` response from the API. 
 
 If you need a rate limit that is higher than the default, please consider upgrading to a higher paid plan or contacting our [Inokufu sales team](mailto:sales@inokufu.com).
 
@@ -75,5 +75,5 @@ You may experience timeout during the first calls to our endpoints after a long 
 
 ## Questions? Need Help? Found a bug?
 
-If you've got questions about our API, found a bug or just want to chat with our developers, please feel free to send us an email to [support@inokufu.com](mailto:support@inokufu.com)!
+If you've got questions about our API, found a bug or just want to chat with our developers, please feel free to email us at [support@inokufu.com](mailto:support@inokufu.com)!
 
