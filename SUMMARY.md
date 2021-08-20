@@ -7,9 +7,9 @@
 * [Learning Object v2](learning-object-api/v2.md)
 * [Learning Object v1 \(deprecated\)](https://inokufu.github.io/api_learning_object_v1)
 
-## DomComp API
+## Competency API
 
-* [DomComp v1](domcomp-api/v1.md)
+* [Competency v1](competency-api/v1.md)
 
 ## Resources
 

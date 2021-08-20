@@ -12,7 +12,7 @@ Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomCo
 
 The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc. 
 
-The **DomComp API** enables you to explore and connect skills, jobs and competencies. In addition to our own Inokufu DomComp Index, this API also aggregate many other skilsl related referential such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
+The **Skills API** enables you to explore and connect skills, jobs and other competencies. In addition to our own Inokufu Skills Index, this API also aggregate many other skills related referentials such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
 
 ## Reading this documentation
 
