@@ -6,13 +6,13 @@ description: Explore our guides and examples to integrate the Inokufu web servic
 
 ## Welcome to the **Inokufu web services APIs**
 
-The **Inokufu web services APIs** allow you to programmatically access Inokufu data and tools. You can use these APIs to retrieve information about learning objects, search for learning objects meeting specific criteria, explore Domains of Competency \(DomComp\) and more.
+The **Inokufu web services APIs** allow you to programmatically access Inokufu data and tools. You can use these APIs to retrieve information about learning objects, search for learning objects meeting specific criteria, explore domains of competency and more.
 
-Inokufu APIs are divided into two distinct APIs: **Learning Object** and **DomComp**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
+Inokufu APIs are divided into two distinct APIs: **Learning Object** and **Competency**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
 The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc. 
 
-The **Skills API** enables you to explore and connect skills, jobs and other competencies. In addition to our own Inokufu Skills Index, this API also aggregate many other skills related referentials such as the ESCO classification, ROME code from Pôle Emploi, Formacode®, etc. 
+The **Competency API** enables you to explore and connect skills, domains of knowledge or occupations from various taxonomies and frameworks such as Wikipedia, ESCO classification, ROME codes from Pôle Emploi, Formacode®, etc. 
 
 ## Reading this documentation
 
