@@ -4,7 +4,7 @@ description: Frequently asked questions
 
 # FAQ
 
-## 👋 Who is behind Inokufu? <a id="who-is-behind-gitbook"></a>
+## 👋 Who is behind Inokufu? <a href="who-is-behind-gitbook" id="who-is-behind-gitbook"></a>
 
 We are a small french team based in a beautiful city called Lyon, just hours from the French Alps! You can read more about us on our [About page.](https://www.inokufu.com/about/) 🤗
 
@@ -18,7 +18,7 @@ Getting started with Inokufu APIs is super easy! Simply call any of our endpoint
 
 ## **How do I get an API key?**
 
-Go to [our Rapid API page](https://rapidapi.com/search/inokufu) and subscribe to the plan that fits your need. After subscribing, you will receive your own API key. This API key need to be included in the header of your calls \(`x-rapidapi-key` when using Rapid API or `x-api-key` for direct customers\).
+Go to [our Rapid API page](https://rapidapi.com/search/inokufu) and subscribe to the plan that fits your need. After subscribing, you will receive your own API key. This API key need to be included in the header of your calls (`x-rapidapi-key` when using Rapid API or `x-api-key` for direct customers).
 
 ## **What if I don't know how much API quota I need?**
 
@@ -30,9 +30,8 @@ You can follow your usage metrics within your [Rapid API](https://rapidapi.com/s
 
 ## **What if I want to change my plan?**
 
-You can upgrade, downgrade, or cancel your monthly account at any time with no further obligation, within your [Rapid API](https://rapidapi.com/search/inokufu) dashboard. If you are a direct customer, please get in touch with our [Inokufu sales team](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I%27d%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
+You can upgrade, downgrade, or cancel your monthly account at any time with no further obligation, within your [Rapid API](https://rapidapi.com/search/inokufu) dashboard. If you are a direct customer, please get in touch with our [Inokufu sales team](mailto:contact@inokufu.com?subject=Inokufu%20API%20Key%20request\&body=Hi,%0D%0A%20%0D%0A%20I%20found%20your%20awesome%20Inokufu%20API%20Cloud%20and%20I%20would%20be%20very%20intersted%20to%20get%20a%20Key!%0D%0A%20%0D%0A%20My%20name%20is%20....%20and%20I%27d%20like%20to%20get%20a%20free%20API%20key%20for%20testing%20purpose%20/%20paid%20API%20key%20for%20integrating%20it%20in%20my%20app/project.%20%0D%0A%20%0D%0A%20Regards,%20%0D%0A%20...).
 
 ## **Questions? Want a demo?**
 
 We're always available at [contact@inokufu.com](mailto:contact@inokufu.com?subject=Inokufu%20API%20-%20Question)
-
