@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Getting Started 🎉](README.md)
+* [Overview](README.md)
 
 ## Learning object API
 
 * [Learning Object v2](learning-object-api/v2.md)
-* [Learning Object v1 \(deprecated\)](https://inokufu.github.io/api_learning_object_v1)
+* [Learning Object v1 (deprecated)](https://inokufu.github.io/api_learning_object_v1)
 
 ## Competency API
 
@@ -17,4 +17,3 @@
 * [Website](https://www.inokufu.com)
 * [Rapid API](https://rapidapi.com/search/inokufu)
 * [Credits](resources/credits.md)
-

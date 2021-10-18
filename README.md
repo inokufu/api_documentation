@@ -2,7 +2,7 @@
 description: Explore our guides and examples to integrate the Inokufu web services APIs.
 ---
 
-# Getting Started 🎉
+# Overview
 
 ## Welcome to the **Inokufu web services APIs**
 
@@ -10,16 +10,16 @@ The **Inokufu web services APIs** allow you to programmatically access Inokufu d
 
 Inokufu APIs are divided into two distinct APIs: **Learning Object** and **Competency**. Each of these services has its own page in this documentation. The documentation for each API is structured by _endpoints_. An endpoint is a specific method within an API that performs one action and is located at a specific URL.
 
-The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as  YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc. 
+The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="learning-object-api/v2.md" %}
+[v2.md](learning-object-api/v2.md)
 {% endcontent-ref %}
 
-The **Competency API** enables you to explore and connect skills, occupations or domains of knowledge from various taxonomies and frameworks such as Wikipedia, ESCO classification, ROME codes from Pôle Emploi, Formacode®, etc. 
+The **Competency API** enables you to explore and connect skills, occupations or domains of knowledge from various taxonomies and frameworks such as Wikipedia, ESCO classification, ROME codes from Pôle Emploi, Formacode®, etc.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="competency-api/v1.md" %}
+[v1.md](competency-api/v1.md)
 {% endcontent-ref %}
 
 ## Reading this documentation
@@ -29,8 +29,8 @@ Each API endpoint in this documentation is described using several parts:
 * **The HTTP method.** Includes `GET`, `POST`, `PUT`, `PATCH`, `DELETE`.
 * **The base path.** URLs referenced in the documentation have a base path such as`https://api.inokufu.com/learningobject/v2` . This base path goes _before_ the endpoint path. Note that if you use [RapidAPI](https://rapidapi.com/organization/inokufu-search) to connect to our APIs, you should use the base URL provided by RapidAPI, such as `https://learning-objects-v2.p.rapidapi.com`
 * **The endpoint path.** This path goes after the base path and enable you to access the specific endpoint you need. For example, to access the Search endpoint of the Learning object API v2, you must add `/search` to the base path:`https://api.inokufu.com/learningobject/v2/search`
-* **Required parameters.** These parameters must be included in a request. Query parameters are added to the end of the URL with [query string encoding](https://en.wikipedia.org/wiki/Query_string). In the example above, `lang=en` and `type=video` are required parameters. 
-* **Optional parameters.** These parameters can be included in a request to customize the query. 
+* **Required parameters.** These parameters must be included in a request. Query parameters are added to the end of the URL with [query string encoding](https://en.wikipedia.org/wiki/Query_string). In the example above, `lang=en` and `type=video` are required parameters.
+* **Optional parameters.** These parameters can be included in a request to customize the query.
 * **Authentication.** If an API endpoint requires authentication, the API key must be included in the request header.
 * **Code examples.** Each endpoint has example requests in cURL, python, php and javascript format.
 
@@ -59,7 +59,7 @@ If we deprecate an API or API endpoint that you are using, we will email you to 
 
 ## Rate limits
 
-Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled, and you will receive a `HTTP 429 Too Many Requests` response from the API. 
+Each Inokufu API has rate limits that cap the number of requests you can make against an endpoint. If you exceed a rate limit, your request will be throttled, and you will receive a `HTTP 429 Too Many Requests` response from the API.
 
 If you need a rate limit that is higher than the default, please consider upgrading to a higher paid plan or contacting our [Inokufu sales team](mailto:sales@inokufu.com).
 
@@ -73,7 +73,7 @@ We recommend that all access to Inokufu APIs is over HTTPS. Requests initiated o
 
 ## Pagination
 
-Pagination lets you list many objects from an API by using more than one request. 
+Pagination lets you list many objects from an API by using more than one request.
 
 In the Inokufu API endpoints that support pagination, the optional `max` parameter specifies the maximum number of objects to return. The API will try to return the requested number of objects.
 
