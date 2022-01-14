@@ -24,9 +24,9 @@ The API currently supports 13 types of learning objects as follows:
 | `tutorial`          | WikiHow, Instructables                           |
 | `website`           | Code Academy, Apprendre TV5 Monde                |
 
-> We are in the process of indexing additional types learning objects such as exercise, XR/VR/AR, scientific articles, reports, etc. When available, these types will be added to the supported list.
+> We are in the process of indexing additional types of learning objects such as exercise, XR/VR/AR, scientific articles, reports, etc. When available, these types will be added to the supported list.
 
-You can access to the list of supported types using the `/type` endpoint described below.
+You can access to the list of supported types using the `/type` endpoint as described below.
 
 ## Request
 

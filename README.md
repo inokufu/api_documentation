@@ -18,8 +18,8 @@ The **Learning Object API** gives you access to our ever-increasing index of 2.5
 
 The **Competency API** enables you to explore and connect skills, occupations or domains of knowledge from various taxonomies and frameworks such as Wikipedia, ESCO classification, ROME codes from Pôle Emploi, Formacode®, etc.
 
-{% content-ref url="competency-api/v1.md" %}
-[v1.md](competency-api/v1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Reading this documentation
