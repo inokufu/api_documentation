@@ -4,7 +4,7 @@ description: This endpoint enables you to send us feedback about specific learni
 
 # Feedback
 
-### Request
+## Request
 
 {% tabs %}
 {% tab title="Rapid API" %}
@@ -20,7 +20,7 @@ POST https://api.inokufu.com/learningobject/v2/feedback
 {% endtab %}
 {% endtabs %}
 
-#### Headers
+### Headers
 
 The API key must be included in the header.
 
@@ -42,7 +42,7 @@ The API key must be included in the header.
 Make sure to replace SAY-FRIEND-AND-ENTER with your own Developer API key.
 {% endhint %}
 
-#### Body
+### Body
 
 This endpoint requires the parameters to be sent in the body, formatted as JSON. Parameters are described in the table below.
 

@@ -6,7 +6,7 @@ description: >-
 
 # Search by type
 
-### Request
+## Request
 
 {% tabs %}
 {% tab title="Rapid API" %}
@@ -22,7 +22,7 @@ GET https://api.inokufu.com/learningobject/v2/search
 {% endtab %}
 {% endtabs %}
 
-#### Headers
+### Headers
 
 The API key must be included in the header.
 
@@ -44,7 +44,7 @@ The API key must be included in the header.
 Make sure to replace SAY-FRIEND-AND-ENTER with your own Developer API key.
 {% endhint %}
 
-#### Query Parameters
+### Query Parameters
 
 Query parameters must be included in the URL.
 
@@ -74,7 +74,7 @@ Query parameters must be included in the URL.
 If you want to enforce strictly one specific query paremeter, you can add `!important` after it. This parameter wil be applied strictly even if the global `match` parameter is set to `best-effort`.
 {% endhint %}
 
-#### Code examples
+### Code examples
 
 See [here](https://rapidapi.com/inokufu-search-api/api/learning-objects-v2/) for **Rapid API** codes examples.
 
@@ -126,7 +126,7 @@ const search = async () => {fetch('https://api.inokufu.com/learningobject/v2/sea
 {% endtab %}
 {% endtabs %}
 
-### Response
+## Response
 
 #### Response parameters
 
@@ -147,7 +147,7 @@ const search = async () => {fetch('https://api.inokufu.com/learningobject/v2/sea
 | `author`             |          | List of authors associated with this LO. Authors are the people that make the LO. For `mooc`,`distance learning` or `training` this can be a teacher or `trainer`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | `PriceSpecification` |          | <p>Informations about the pricing of the LO, which includes:</p><ul><li><code>price</code> is the offer price of the LO as a decimal number.</li><li><code>priceCurrency</code>is the currency of the price of the LO as a symbol (<code>$</code>, <code>€</code> , etc)</li><li><code>price-free</code> is a boolean that is <code>true</code> when the LO can be accessed without paying, and <code>false</code> when the LO requires payment to be accessed.</li></ul><p>Beware some <code>providers</code>such as Coursera offer all their <code>mooc</code> in both free and paid version. In this case the price of the LO will be not null while marked as <code>price-free=true</code></p> |
 
-#### Response example
+### Response example
 
 Here is an example of the JSON structured response provided by this endpoint.
 

@@ -4,7 +4,9 @@ description: This endpoint returns a list of the types currently supported by th
 
 # Types
 
-##
+## Supported types
+
+The API currently supports 13 types of learning objects as follows:
 
 | Type                | Example of providers                             |
 | ------------------- | ------------------------------------------------ |
@@ -22,7 +24,11 @@ description: This endpoint returns a list of the types currently supported by th
 | `tutorial`          | WikiHow, Instructables                           |
 | `website`           | Code Academy, Apprendre TV5 Monde                |
 
-### Request
+> We are in the process of indexing additional types learning objects such as exercise, XR/VR/AR, scientific articles, reports, etc. When available, these types will be added to the supported list.
+
+You can access to the list of supported types using the `/type` endpoint described below.
+
+## Request
 
 {% tabs %}
 {% tab title="Rapid API" %}
@@ -38,15 +44,15 @@ GET https://api.inokufu.com/learningobject/v2/type
 {% endtab %}
 {% endtabs %}
 
-#### Headers
+### Headers
 
 This endpoint does not require any API key authentication in the header.
 
-#### Query Parameters
+### Query Parameters
 
 This endpoint does not require any query parameter.
 
-#### Code examples
+### Code examples
 
 See [here](https://rapidapi.com/inokufu-search-api/api/learning-objects-v2/) for **Rapid API** codes examples.
 
@@ -91,16 +97,16 @@ const type = async () => {fetch('https://api.inokufu.com/learningobject/v2/type'
 {% endtab %}
 {% endtabs %}
 
-### Response
+## Response
 
-#### Response parameters
+### Response parameters
 
 | Parameter     | Description                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------------------- |
 | `type`        | Name of the type of LO to be used in the `/search` endpoint to filter LO with the `type` parameter |
 | `description` | Short description of this type                                                                     |
 
-#### Response example
+### Response example
 
 Here is an example of the JSON structured response provided by this endpoint.
 

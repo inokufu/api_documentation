@@ -10,7 +10,7 @@
 * [Best efforts](learning-object-api/best-efforts.md)
 * [Search by type](learning-object-api/search-by-type.md)
 * [Search by provider](learning-object-api/search-by-provider.md)
-* [Lang](learning-object-api/lang.md)
+* [Languages](learning-object-api/languages.md)
 * [Types](learning-object-api/types.md)
 * [Bloom taxonomy](learning-object-api/bloom-taxonomy.md)
 * [Providers](learning-object-api/providers.md)
