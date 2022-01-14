@@ -4,8 +4,12 @@
 
 ## Learning object API
 
-* [Learning Object v2](learning-object-api/v2.md)
-* [Learning Object v1 (deprecated)](https://inokufu.github.io/api_learning_object_v1)
+* [v2](learning-object-api/v2/README.md)
+  * [Authentication](learning-object-api/v2/authentication.md)
+  * [Usage plans](learning-object-api/v2/usage-plans.md)
+  * [Best efforts](learning-object-api/v2/best-efforts.md)
+  * [Search](learning-object-api/v2/search.md)
+* [v1 (deprecated)](https://inokufu.github.io/api\_learning\_object\_v1)
 
 ## Competency API
 
