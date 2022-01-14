@@ -4,12 +4,17 @@
 
 ## Learning object API
 
-* [v2](learning-object-api/v2/README.md)
-  * [Authentication](learning-object-api/v2/authentication.md)
-  * [Usage plans](learning-object-api/v2/usage-plans.md)
-  * [Best efforts](learning-object-api/v2/best-efforts.md)
-  * [Search](learning-object-api/v2/search.md)
-* [v1 (deprecated)](https://inokufu.github.io/api\_learning\_object\_v1)
+* [Getting started](learning-object-api/getting-started.md)
+* [Authentication](learning-object-api/authentication.md)
+* [Usage plans](learning-object-api/usage-plans.md)
+* [Best efforts](learning-object-api/best-efforts.md)
+* [Search by type](learning-object-api/search-by-type.md)
+* [Search by provider](learning-object-api/search-by-provider.md)
+* [Lang](learning-object-api/lang.md)
+* [Types](learning-object-api/types.md)
+* [Bloom taxonomy](learning-object-api/bloom-taxonomy.md)
+* [Providers](learning-object-api/providers.md)
+* [Feedback](learning-object-api/feedback.md)
 
 ## Competency API
 

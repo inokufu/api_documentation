@@ -12,8 +12,8 @@ Inokufu APIs are divided into two distinct APIs: **Learning Object** and **Compe
 
 The **Learning Object API** gives you access to our ever-increasing index of 2.5M+ learning objects from various providers such as YouTube, Coursera, edX, Openclassrooms, Apple podcasts, Google Play Store, Apple Books, Amazon Books, Instructables, Medium, etc.
 
-{% content-ref url="learning-object-api/v2/" %}
-[v2](learning-object-api/v2/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 The **Competency API** enables you to explore and connect skills, occupations or domains of knowledge from various taxonomies and frameworks such as Wikipedia, ESCO classification, ROME codes from Pôle Emploi, Formacode®, etc.
