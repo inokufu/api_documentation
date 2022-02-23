@@ -2,6 +2,30 @@
 
 * [Overview](README.md)
 
+## Learning Object
+
+* [Why learning object is key](learning-object/why-learning-object-is-key.md)
+* [Competency-based education](learning-object/competency-based-education.md)
+* [Metadata models](learning-object/metadata-models.md)
+* [Inokufu Schema](learning-object/inokufu-schema/README.md)
+  * [URL](learning-object/inokufu-schema/url.md)
+  * [Title](learning-object/inokufu-schema/title.md)
+  * [Description](learning-object/inokufu-schema/description.md)
+  * [Picture](learning-object/inokufu-schema/picture.md)
+  * [Language](learning-object/inokufu-schema/language.md)
+  * [Type](learning-object/inokufu-schema/type.md)
+  * [Learning goal](learning-object/inokufu-schema/learning-goal.md)
+  * [Provider](learning-object/inokufu-schema/provider.md)
+  * [Publisher](learning-object/inokufu-schema/publisher.md)
+  * [Author](learning-object/inokufu-schema/author.md)
+  * [Competency](learning-object/inokufu-schema/competency.md)
+  * [Expertise level](learning-object/inokufu-schema/expertise-level.md)
+  * [Age](learning-object/inokufu-schema/age.md)
+  * [Popularity note](learning-object/inokufu-schema/popularity-note.md)
+  * [Address (if physical)](learning-object/inokufu-schema/address-if-physical.md)
+  * [Learning time](learning-object/inokufu-schema/learning-time.md)
+  * [PriceSpecification](learning-object/inokufu-schema/pricespecification.md)
+
 ## Learning object API
 
 * [Getting started](learning-object-api/getting-started.md)
