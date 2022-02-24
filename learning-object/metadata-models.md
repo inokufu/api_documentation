@@ -1,8 +1,8 @@
 # Metadata models
 
-The advantages of using learning object to build learning pathway is the modularity. Like Lego bricks, teachers can build or adapt pre-made learning pathway to the specific need or goals of their students.
+The main advantage of using learning objects to build learning pathways is modularity. Like Lego bricks, teachers can more easily build flexible learning pathways, adapted to the specific needs or goals of their students.
 
-For this, we need metadata. Metadata are all the data describing a learning objects such as its title, description, thumbnail picture, length, etc.
+But how can we identify which learning objects can be interchanged with other? In order to do this we need to have well characterised learning objects, i.e. rich metadata. Metadata are all the data describing a learning objects such as its title, description, thumbnail picture, length, learning goal, etc.
 
 Over the last 20 years several data models for [Learning Object Metadata](https://en.wikipedia.org/wiki/Learning\_object\_metadata) were developed. It is very interesting that there are two types of data models for learning objects:
 
