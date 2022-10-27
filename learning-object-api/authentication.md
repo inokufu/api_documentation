@@ -99,7 +99,3 @@ const search = async () => {fetch('api_endpoint_here', {headers: {"x-api-key": a
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-For Demo purpose, you can use this API key : `demo29331806e87fe8d34d03ddaad2b1b454b58a5b9d4f1385d4f86bb321` but beware both request speed and number of daily calls are limited with this key.
-{% endhint %}
-
